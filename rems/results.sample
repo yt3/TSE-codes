@@ -1,0 +1,214 @@
+ltl prop1: [] ((! ((current[8]==before_evolution))) || (! (encrypted[0])))
+ltl prop2: [] ((! ((((current[1]!=before_comm)) && ((current[1]!=after_enc))) && ((current[8]==evolved)))) || ([] (encrypted[0])))
+ltl prop3: (! ([] (<> ((ol==1))))) || ([] ((! ((((current[1]==sending)) || ((current[1]==receiving0))) || ((current[1]==receiving1)))) || (<> ((current[1]==before_comm)))))
+  the model contains 3 never claims: prop3, prop2, prop1
+  only one claim is used in a verification run
+  choose which one with ./pan -a -N name (defaults to -N prop1)
+  or use e.g.: spin -search -ltl prop1 rems7.pml
+Depth=   53703 States=    1e+06 Transitions= 1.01e+07 Memory=   430.088	t=     3.96 R=   3e+05
+Depth=   53703 States=    2e+06 Transitions= 2.04e+07 Memory=   464.853	t=     8.12 R=   2e+05
+
+(Spin Version 6.4.9 -- 17 December 2018)
+	+ Partial Order Reduction
+	+ Compression
+
+Full statespace search for:
+	never claim         	- (not selected)
+	assertion violations	+
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	+
+
+State-vector 240 byte, depth reached 53703, errors: 0
+  2925217 states, stored
+ 27114660 states, matched
+ 30039877 transitions (= stored+matched)
+ 18938883 atomic steps
+hash conflicts:    878350 (resolved)
+
+Stats on memory usage (in Megabytes):
+  747.641	equivalent memory usage for states (stored*(State-vector + overhead))
+  102.470	actual memory usage for states (compression: 13.71%)
+         	state-vector as stored = 9 byte + 28 byte overhead
+  128.000	memory used for hash table (-w24)
+  267.029	memory used for DFS stack (-m5000000)
+  497.470	total actual memory usage
+
+
+nr of templates: [ 0:globals 1:chans 2:procs ]
+collapse counts: [ 0:214941 2:2305 ]
+
+pan: elapsed time 12.1 seconds
+pan: rate  242756.6 states/second
+memory 511164
+time 14.35
+memory 511292
+time 14.37
+memory 511160
+time 14.41
+memory 511160
+time 14.49
+memory 511160
+time 14.23
+ltl prop1: [] ((! ((current[8]==before_evolution))) || (! (encrypted[0])))
+ltl prop2: [] ((! ((((current[1]!=before_comm)) && ((current[1]!=after_enc))) && ((current[8]==evolved)))) || ([] (encrypted[0])))
+ltl prop3: (! ([] (<> ((ol==1))))) || ([] ((! ((((current[1]==sending)) || ((current[1]==receiving0))) || ((current[1]==receiving1)))) || (<> ((current[1]==before_comm)))))
+  the model contains 3 never claims: prop3, prop2, prop1
+  only one claim is used in a verification run
+  choose which one with ./pan -a -N name (defaults to -N prop1)
+  or use e.g.: spin -search -ltl prop1 rems7.pml
+pan: ltl formula prop1
+Depth=   65972 States=    1e+06 Transitions= 1.01e+07 Memory=   438.193	t=     4.54 R=   2e+05
+Depth=   65972 States=    2e+06 Transitions= 2.04e+07 Memory=   488.193	t=     9.31 R=   2e+05
+
+(Spin Version 6.4.9 -- 17 December 2018)
+	+ Partial Order Reduction
+	+ Compression
+
+Full statespace search for:
+	never claim         	+ (prop1)
+	assertion violations	+ (if within scope of claim)
+	acceptance   cycles 	+ (fairness disabled)
+	invalid end states	- (disabled by never claim)
+
+State-vector 248 byte, depth reached 65972, errors: 0
+  2925217 states, stored
+ 27114660 states, matched
+ 30039877 transitions (= stored+matched)
+ 18938883 atomic steps
+hash conflicts:    873738 (resolved)
+
+Stats on memory usage (in Megabytes):
+  792.276	equivalent memory usage for states (stored*(State-vector + overhead))
+  140.470	actual memory usage for states (compression: 17.73%)
+         	state-vector as stored = 14 byte + 36 byte overhead
+  128.000	memory used for hash table (-w24)
+  267.029	memory used for DFS stack (-m5000000)
+  535.459	total actual memory usage
+
+
+nr of templates: [ 0:globals 1:chans 2:procs ]
+collapse counts: [ 0:214941 2:2305 3:1 ]
+
+pan: elapsed time 13.9 seconds
+pan: rate 210447.27 states/second
+memory 550108
+time 16.40
+memory 550236
+time 16.47
+memory 550196
+time 16.67
+memory 550168
+time 16.29
+memory 550124
+time 16.39
+ltl prop1: [] ((! ((current[8]==before_evolution))) || (! (encrypted[0])))
+ltl prop2: [] ((! ((((current[1]!=before_comm)) && ((current[1]!=after_enc))) && ((current[8]==evolved)))) || ([] (encrypted[0])))
+ltl prop3: (! ([] (<> ((ol==1))))) || ([] ((! ((((current[1]==sending)) || ((current[1]==receiving0))) || ((current[1]==receiving1)))) || (<> ((current[1]==before_comm)))))
+  the model contains 3 never claims: prop3, prop2, prop1
+  only one claim is used in a verification run
+  choose which one with ./pan -a -N name (defaults to -N prop1)
+  or use e.g.: spin -search -ltl prop1 rems7.pml
+pan: ltl formula prop2
+Depth=   65977 States=    1e+06 Transitions= 1.02e+07 Memory=   436.728	t=     4.67 R=   2e+05
+Depth=   65977 States=    2e+06 Transitions= 2.06e+07 Memory=   480.576	t=     9.49 R=   2e+05
+Depth=   65977 States=    3e+06 Transitions= 3.11e+07 Memory=   529.404	t=     14.4 R=   2e+05
+Depth=   65977 States=    4e+06 Transitions= 4.16e+07 Memory=   579.502	t=     19.4 R=   2e+05
+
+(Spin Version 6.4.9 -- 17 December 2018)
+	+ Partial Order Reduction
+	+ Compression
+
+Full statespace search for:
+	never claim         	+ (prop2)
+	assertion violations	+ (if within scope of claim)
+	acceptance   cycles 	+ (fairness disabled)
+	invalid end states	- (disabled by never claim)
+
+State-vector 248 byte, depth reached 65977, errors: 0
+  4125217 states, stored
+ 38758410 states, matched
+ 42883627 transitions (= stored+matched)
+ 27088883 atomic steps
+hash conflicts:   6876066 (resolved)
+
+Stats on memory usage (in Megabytes):
+ 1117.288	equivalent memory usage for states (stored*(State-vector + overhead))
+  191.060	actual memory usage for states (compression: 17.10%)
+         	state-vector as stored = 13 byte + 36 byte overhead
+  128.000	memory used for hash table (-w24)
+  267.029	memory used for DFS stack (-m5000000)
+  586.045	total actual memory usage
+
+
+nr of templates: [ 0:globals 1:chans 2:procs ]
+collapse counts: [ 0:214941 2:2305 4:2 ]
+
+pan: elapsed time 20.1 seconds
+pan: rate 205336.83 states/second
+memory 601920
+time 22.58
+memory 601936
+time 22.61
+memory 601900
+time 22.86
+memory 601852
+time 22.61
+memory 601896
+time 22.92
+ltl prop1: [] ((! ((current[8]==before_evolution))) || (! (encrypted[0])))
+ltl prop2: [] ((! ((((current[1]!=before_comm)) && ((current[1]!=after_enc))) && ((current[8]==evolved)))) || ([] (encrypted[0])))
+ltl prop3: (! ([] (<> ((ol==1))))) || ([] ((! ((((current[1]==sending)) || ((current[1]==receiving0))) || ((current[1]==receiving1)))) || (<> ((current[1]==before_comm)))))
+  the model contains 3 never claims: prop3, prop2, prop1
+  only one claim is used in a verification run
+  choose which one with ./pan -a -N name (defaults to -N prop1)
+  or use e.g.: spin -search -ltl prop1 rems7.pml
+pan: ltl formula prop3
+Depth=  131741 States=    1e+06 Transitions= 1.19e+07 Memory=   430.674	t=     5.35 R=   2e+05
+Depth=  131741 States=    2e+06 Transitions= 2.68e+07 Memory=   468.662	t=       12 R=   2e+05
+Depth=  131741 States=    3e+06 Transitions= 4.07e+07 Memory=   507.822	t=     18.2 R=   2e+05
+Depth=  131741 States=    4e+06 Transitions= 5.47e+07 Memory=   552.060	t=     24.5 R=   2e+05
+Depth=  131741 States=    5e+06 Transitions= 6.87e+07 Memory=   596.201	t=     31.1 R=   2e+05
+Depth=  131741 States=    6e+06 Transitions= 8.27e+07 Memory=   641.709	t=     37.5 R=   2e+05
+Depth=  131741 States=    7e+06 Transitions= 9.64e+07 Memory=   689.365	t=       44 R=   2e+05
+
+(Spin Version 6.4.9 -- 17 December 2018)
+	+ Partial Order Reduction
+	+ Compression
+
+Full statespace search for:
+	never claim         	+ (prop3)
+	assertion violations	+ (if within scope of claim)
+	acceptance   cycles 	+ (fairness disabled)
+	invalid end states	- (disabled by never claim)
+
+State-vector 248 byte, depth reached 131741, errors: 0
+  6872408 states, stored (7.35678e+06 visited)
+ 94025250 states, matched
+1.0138203e+08 transitions (= visited+matched)
+ 65554143 atomic steps
+hash conflicts:  17503091 (resolved)
+
+Stats on memory usage (in Megabytes):
+ 1861.347	equivalent memory usage for states (stored*(State-vector + overhead))
+  311.688	actual memory usage for states (compression: 16.75%)
+         	state-vector as stored = 12 byte + 36 byte overhead
+  128.000	memory used for hash table (-w24)
+  267.029	memory used for DFS stack (-m5000000)
+  706.650	total actual memory usage
+
+
+nr of templates: [ 0:globals 1:chans 2:procs ]
+collapse counts: [ 0:216733 2:2305 5:6 ]
+
+pan: elapsed time 46.3 seconds
+pan: rate 158928.13 states/second
+memory 725380
+time 48.78
+memory 725436
+time 49.29
+memory 725472
+time 49.22
+memory 725384
+time 54.69
+memory 725368
+time 51.07

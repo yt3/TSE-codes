@@ -1,0 +1,515 @@
+pan:1: invalid end state (at depth 33)
+pan: wrote rems3Bad.pml.trail
+
+(Spin Version 6.4.9 -- 17 December 2018)
+Warning: Search not completed
+	+ Partial Order Reduction
+	+ Compression
+
+Full statespace search for:
+	never claim         	- (not selected)
+	assertion violations	+
+	cycle checks       	- (disabled by -DSAFETY)
+	invalid end states	+
+
+State-vector 96 byte, depth reached 531, errors: 1
+      414 states, stored
+     1201 states, matched
+     1615 transitions (= stored+matched)
+     2662 atomic steps
+hash conflicts:         0 (resolved)
+
+Stats on memory usage (in Megabytes):
+    0.049	equivalent memory usage for states (stored*(State-vector + overhead))
+    0.266	actual memory usage for states
+  128.000	memory used for hash table (-w24)
+  267.029	memory used for DFS stack (-m5000000)
+  395.224	total actual memory usage
+
+
+nr of templates: [ 0:globals 1:chans 2:procs ]
+collapse counts: [ 0:140 2:14 ]
+
+pan: elapsed time 0 seconds
+spin: rems3Bad.pml:0, warning, proctype :init:, 'mtype s_after_enc_0_targets' variable is never used (other than in print stmnts)
+using statement merging
+  1:	proc  0 (:init::1) rems3Bad.pml:15 (state 1)	[current[0] = before_comm_0]	<merge 49 now @2>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:16 (state 2)	[current[3] = before_evolution_0]	<merge 49 now @3>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:17 (state 3)	[s_before_comm_0_targets[0] = sending_0]	<merge 49 now @4>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:18 (state 4)	[s_before_comm_0_targets[2] = receiving0_0]	<merge 49 now @5>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:19 (state 5)	[s_after_enc_0_targets[0] = sending_0]	<merge 49 now @6>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:20 (state 6)	[s_after_enc_0_targets[2] = receiving0_0]	<merge 49 now @7>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:21 (state 7)	[s_sending_0_1_targets = before_comm_0]	<merge 49 now @8>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:22 (state 8)	[s_receiving0_0_1_targets = before_comm_0]	<merge 49 now @9>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:23 (state 9)	[s_before_comm_1_targets[0] = sending]	<merge 49 now @10>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:24 (state 10)	[s_before_comm_1_targets[1] = receiving0]	<merge 49 now @11>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:25 (state 11)	[s_sending_1_targets = before_comm]	<merge 49 now @12>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:26 (state 12)	[s_receiving0_1_targets = before_comm]	<merge 49 now @13>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:27 (state 13)	[s_before_comm_0_ls[0] = comm0]	<merge 49 now @14>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:28 (state 14)	[s_before_comm_0_ls[2] = comm1]	<merge 49 now @15>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:29 (state 15)	[s_after_enc_0_ls[0] = comm0]	<merge 49 now @16>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:30 (state 16)	[s_after_enc_0_ls[2] = comm1]	<merge 49 now @17>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:31 (state 17)	[s_sending_0_1_ls = ack0]	<merge 49 now @18>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:32 (state 18)	[s_receiving0_0_1_ls = ack1]	<merge 49 now @19>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:33 (state 19)	[s_before_comm_1_ls[0] = comm1]	<merge 49 now @20>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:34 (state 20)	[s_before_comm_1_ls[1] = comm0]	<merge 49 now @21>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:35 (state 21)	[s_sending_1_ls = ack1]	<merge 49 now @22>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:36 (state 22)	[s_receiving0_1_ls = ack0]	<merge 49 now @23>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:37 (state 23)	[current[1] = before_comm]	<merge 49 now @24>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:38 (state 24)	[current[4] = before_evolution]	<merge 49 now @25>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:39 (state 25)	[s_before_comm_0_targets[1] = sending_0]	<merge 49 now @26>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:40 (state 26)	[s_before_comm_0_targets[3] = receiving0_0]	<merge 49 now @27>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:41 (state 27)	[s_after_enc_0_targets[1] = sending_0]	<merge 49 now @28>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:42 (state 28)	[s_after_enc_0_targets[3] = receiving0_0]	<merge 49 now @29>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:43 (state 29)	[s_sending_0_2_targets = before_comm_0]	<merge 49 now @30>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:44 (state 30)	[s_receiving0_0_2_targets = before_comm_0]	<merge 49 now @31>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:45 (state 31)	[s_before_comm_2_targets[0] = sending]	<merge 49 now @32>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:46 (state 32)	[s_before_comm_2_targets[1] = receiving0]	<merge 49 now @33>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:47 (state 33)	[s_sending_2_targets = before_comm]	<merge 49 now @34>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:48 (state 34)	[s_receiving0_2_targets = before_comm]	<merge 49 now @35>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:49 (state 35)	[s_before_comm_0_ls[1] = comm0]	<merge 49 now @36>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:50 (state 36)	[s_before_comm_0_ls[3] = comm1]	<merge 49 now @37>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:51 (state 37)	[s_after_enc_0_ls[1] = comm0]	<merge 49 now @38>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:52 (state 38)	[s_after_enc_0_ls[3] = comm1]	<merge 49 now @39>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:53 (state 39)	[s_sending_0_2_ls = ack0]	<merge 49 now @40>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:54 (state 40)	[s_receiving0_0_2_ls = ack1]	<merge 49 now @41>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:55 (state 41)	[s_before_comm_2_ls[0] = comm1]	<merge 49 now @42>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:56 (state 42)	[s_before_comm_2_ls[1] = comm0]	<merge 49 now @43>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:57 (state 43)	[s_sending_2_ls = ack1]	<merge 49 now @44>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:58 (state 44)	[s_receiving0_2_ls = ack0]	<merge 49 now @45>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:59 (state 45)	[current[2] = before_comm]	<merge 49 now @46>
+
+  1:	proc  0 (:init::1) rems3Bad.pml:60 (state 46)	[current[5] = before_evolution]	<merge 49 now @49>
+
+  2:	proc  0 (:init::1) rems3Bad.pml:62 (state 47)	[ol = 0]
+
+  3:	proc  0 (:init::1) rems3Bad.pml:66 (state 51)	[dob = d1]
+
+  4:	proc  0 (:init::1) rems3Bad.pml:70 (state 55)	[dm = d1]	<merge 225 now @225>
+
+  5:	proc  0 (:init::1) rems3Bad.pml:195 (state 138)	[((!(ol)&&(current[3]==before_evolution_0)))]	<merge 0 now @139>
+
+  5:	proc  0 (:init::1) rems3Bad.pml:197 (state 139)	[current[3] = evolved_0]
+
+  6:	proc  0 (:init::1) rems3Bad.pml:267 (state 206)	[ol = 0]
+
+  7:	proc  0 (:init::1) rems3Bad.pml:276 (state 215)	[(!(ol))]
+
+  8:	proc  0 (:init::1) rems3Bad.pml:279 (state 217)	[dm = d2]	<merge 225 now @225>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:231 (state 171)	[((((!(ol)&&(dm==d2))&&(current[3]==evolved_0))&&(!(((!(ol)&&(dm==d2))&&(current[5]==before_evolution)))||(current[2]==before_comm))))]	<merge 0 now @172>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:233 (state 172)	[current[3] = evolved_0]	<merge 208 now @173>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:235 (state 173)	[current[5] = evolved]	<merge 208 now @174>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:236 (state 174)	[s_before_comm_0_targets[1] = after_enc_0]	<merge 208 now @175>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:237 (state 175)	[s_before_comm_0_targets[3] = receiving1_0]	<merge 208 now @176>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:238 (state 176)	[s_after_enc_0_targets[3] = receiving1_0]	<merge 208 now @177>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:239 (state 177)	[s_receiving0_0_2_targets = 0]	<merge 208 now @178>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:240 (state 178)	[s_receiving1_0_2_targets = after_dec_0]	<merge 208 now @179>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:241 (state 179)	[s_after_dec_0_2_targets = before_comm_0]	<merge 208 now @180>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:242 (state 180)	[s_before_comm_2_targets[0] = after_enc]	<merge 208 now @181>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:243 (state 181)	[s_before_comm_2_targets[1] = receiving1]	<merge 208 now @182>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:244 (state 182)	[s_after_enc_2_targets[0] = sending]	<merge 208 now @183>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:245 (state 183)	[s_after_enc_2_targets[1] = receiving1]	<merge 208 now @184>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:246 (state 184)	[s_sending_2_targets = before_comm]	<merge 208 now @185>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:247 (state 185)	[s_receiving0_2_targets = 0]	<merge 208 now @186>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:248 (state 186)	[s_receiving1_2_targets = after_dec]	<merge 208 now @187>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:249 (state 187)	[s_after_dec_2_targets = before_comm]	<merge 208 now @188>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:250 (state 188)	[s_before_comm_0_ls[1] = encrypt_0]	<merge 208 now @189>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:251 (state 189)	[s_before_comm_0_ls[3] = comm1]	<merge 208 now @190>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:252 (state 190)	[s_after_enc_0_ls[3] = comm1]	<merge 208 now @191>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:253 (state 191)	[s_receiving0_0_2_ls = 0]	<merge 208 now @192>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:254 (state 192)	[s_receiving1_0_2_ls = decrypt_0]	<merge 208 now @193>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:255 (state 193)	[s_after_dec_0_2_ls = ack1]	<merge 208 now @194>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:256 (state 194)	[s_before_comm_2_ls[0] = encrypt_2]	<merge 208 now @195>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:257 (state 195)	[s_before_comm_2_ls[1] = comm0]	<merge 208 now @196>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:258 (state 196)	[s_after_enc_2_ls[0] = comm1]	<merge 208 now @197>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:259 (state 197)	[s_after_enc_2_ls[1] = comm0]	<merge 208 now @198>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:260 (state 198)	[s_sending_2_ls = ack1]	<merge 208 now @199>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:261 (state 199)	[s_receiving0_2_ls = 0]	<merge 208 now @200>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:262 (state 200)	[s_receiving1_2_ls = decrypt_2]	<merge 208 now @201>
+
+  9:	proc  0 (:init::1) rems3Bad.pml:263 (state 201)	[s_after_dec_2_ls = ack0]	<merge 208 now @208>
+
+ 10:	proc  0 (:init::1) rems3Bad.pml:267 (state 206)	[ol = 0]
+
+ 11:	proc  0 (:init::1) rems3Bad.pml:276 (state 215)	[(!(ol))]
+
+ 12:	proc  0 (:init::1) rems3Bad.pml:279 (state 217)	[dm = d2]	<merge 225 now @225>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:231 (state 171)	[((((!(ol)&&(dm==d2))&&(current[3]==evolved_0))&&(!(((!(ol)&&(dm==d2))&&(current[5]==before_evolution)))||(current[2]==before_comm))))]	<merge 0 now @172>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:233 (state 172)	[current[3] = evolved_0]	<merge 208 now @173>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:235 (state 173)	[current[5] = evolved]	<merge 208 now @174>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:236 (state 174)	[s_before_comm_0_targets[1] = after_enc_0]	<merge 208 now @175>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:237 (state 175)	[s_before_comm_0_targets[3] = receiving1_0]	<merge 208 now @176>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:238 (state 176)	[s_after_enc_0_targets[3] = receiving1_0]	<merge 208 now @177>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:239 (state 177)	[s_receiving0_0_2_targets = 0]	<merge 208 now @178>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:240 (state 178)	[s_receiving1_0_2_targets = after_dec_0]	<merge 208 now @179>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:241 (state 179)	[s_after_dec_0_2_targets = before_comm_0]	<merge 208 now @180>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:242 (state 180)	[s_before_comm_2_targets[0] = after_enc]	<merge 208 now @181>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:243 (state 181)	[s_before_comm_2_targets[1] = receiving1]	<merge 208 now @182>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:244 (state 182)	[s_after_enc_2_targets[0] = sending]	<merge 208 now @183>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:245 (state 183)	[s_after_enc_2_targets[1] = receiving1]	<merge 208 now @184>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:246 (state 184)	[s_sending_2_targets = before_comm]	<merge 208 now @185>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:247 (state 185)	[s_receiving0_2_targets = 0]	<merge 208 now @186>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:248 (state 186)	[s_receiving1_2_targets = after_dec]	<merge 208 now @187>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:249 (state 187)	[s_after_dec_2_targets = before_comm]	<merge 208 now @188>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:250 (state 188)	[s_before_comm_0_ls[1] = encrypt_0]	<merge 208 now @189>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:251 (state 189)	[s_before_comm_0_ls[3] = comm1]	<merge 208 now @190>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:252 (state 190)	[s_after_enc_0_ls[3] = comm1]	<merge 208 now @191>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:253 (state 191)	[s_receiving0_0_2_ls = 0]	<merge 208 now @192>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:254 (state 192)	[s_receiving1_0_2_ls = decrypt_0]	<merge 208 now @193>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:255 (state 193)	[s_after_dec_0_2_ls = ack1]	<merge 208 now @194>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:256 (state 194)	[s_before_comm_2_ls[0] = encrypt_2]	<merge 208 now @195>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:257 (state 195)	[s_before_comm_2_ls[1] = comm0]	<merge 208 now @196>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:258 (state 196)	[s_after_enc_2_ls[0] = comm1]	<merge 208 now @197>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:259 (state 197)	[s_after_enc_2_ls[1] = comm0]	<merge 208 now @198>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:260 (state 198)	[s_sending_2_ls = ack1]	<merge 208 now @199>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:261 (state 199)	[s_receiving0_2_ls = 0]	<merge 208 now @200>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:262 (state 200)	[s_receiving1_2_ls = decrypt_2]	<merge 208 now @201>
+
+ 13:	proc  0 (:init::1) rems3Bad.pml:263 (state 201)	[s_after_dec_2_ls = ack0]	<merge 208 now @208>
+
+ 14:	proc  0 (:init::1) rems3Bad.pml:268 (state 207)	[ol = 1]
+
+ 15:	proc  0 (:init::1) rems3Bad.pml:271 (state 210)	[((ol&&(current[0]==before_comm_0)))]
+
+ 16:	proc  0 (:init::1) rems3Bad.pml:273 (state 211)	[dob = d1]	<merge 225 now @225>
+
+ 17:	proc  0 (:init::1) rems3Bad.pml:77 (state 60)	[((ol&&(dob==d1)))]
+
+ 18:	proc  0 (:init::1) rems3Bad.pml:79 (state 61)	[(((((current[0]==before_comm_0)&&(s_before_comm_0_ls[0]==comm0))&&(current[1]==before_comm))&&(s_before_comm_1_ls[1]==comm0)))]	<merge 0 now @62>
+
+ 18:	proc  0 (:init::1) rems3Bad.pml:80 (state 62)	[encrypted[0] = 0]	<merge 208 now @63>
+
+ 18:	proc  0 (:init::1) rems3Bad.pml:82 (state 63)	[current[0] = s_before_comm_0_targets[0]]	<merge 208 now @64>
+
+ 18:	proc  0 (:init::1) rems3Bad.pml:84 (state 64)	[current[1] = s_before_comm_1_targets[1]]	<merge 208 now @208>
+
+ 19:	proc  0 (:init::1) rems3Bad.pml:267 (state 206)	[ol = 0]
+
+ 20:	proc  0 (:init::1) rems3Bad.pml:276 (state 215)	[(!(ol))]
+
+ 21:	proc  0 (:init::1) rems3Bad.pml:278 (state 216)	[dm = d1]	<merge 225 now @225>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:198 (state 140)	[((((!(ol)&&(dm==d1))&&(current[3]==evolved_0))&&1))]	<merge 0 now @141>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:200 (state 141)	[current[3] = evolved_0]	<merge 208 now @142>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:202 (state 142)	[current[4] = evolved]	<merge 208 now @143>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:203 (state 143)	[s_before_comm_0_targets[0] = after_enc_0]	<merge 208 now @144>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:204 (state 144)	[s_before_comm_0_targets[2] = receiving1_0]	<merge 208 now @145>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:205 (state 145)	[s_after_enc_0_targets[2] = receiving1_0]	<merge 208 now @146>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:206 (state 146)	[s_receiving0_0_1_targets = 0]	<merge 208 now @147>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:207 (state 147)	[s_receiving1_0_1_targets = after_dec_0]	<merge 208 now @148>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:208 (state 148)	[s_after_dec_0_1_targets = before_comm_0]	<merge 208 now @149>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:209 (state 149)	[s_before_comm_1_targets[0] = after_enc]	<merge 208 now @150>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:210 (state 150)	[s_before_comm_1_targets[1] = receiving1]	<merge 208 now @151>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:211 (state 151)	[s_after_enc_1_targets[0] = sending]	<merge 208 now @152>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:212 (state 152)	[s_after_enc_1_targets[1] = receiving1]	<merge 208 now @153>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:213 (state 153)	[s_sending_1_targets = before_comm]	<merge 208 now @154>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:214 (state 154)	[s_receiving0_1_targets = 0]	<merge 208 now @155>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:215 (state 155)	[s_receiving1_1_targets = after_dec]	<merge 208 now @156>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:216 (state 156)	[s_after_dec_1_targets = before_comm]	<merge 208 now @157>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:217 (state 157)	[s_before_comm_0_ls[0] = encrypt_0]	<merge 208 now @158>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:218 (state 158)	[s_before_comm_0_ls[2] = comm1]	<merge 208 now @159>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:219 (state 159)	[s_after_enc_0_ls[2] = comm1]	<merge 208 now @160>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:220 (state 160)	[s_receiving0_0_1_ls = 0]	<merge 208 now @161>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:221 (state 161)	[s_receiving1_0_1_ls = decrypt_0]	<merge 208 now @162>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:222 (state 162)	[s_after_dec_0_1_ls = ack1]	<merge 208 now @163>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:223 (state 163)	[s_before_comm_1_ls[0] = encrypt_1]	<merge 208 now @164>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:224 (state 164)	[s_before_comm_1_ls[1] = comm0]	<merge 208 now @165>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:225 (state 165)	[s_after_enc_1_ls[0] = comm1]	<merge 208 now @166>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:226 (state 166)	[s_after_enc_1_ls[1] = comm0]	<merge 208 now @167>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:227 (state 167)	[s_sending_1_ls = ack1]	<merge 208 now @168>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:228 (state 168)	[s_receiving0_1_ls = 0]	<merge 208 now @169>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:229 (state 169)	[s_receiving1_1_ls = decrypt_1]	<merge 208 now @170>
+
+ 22:	proc  0 (:init::1) rems3Bad.pml:230 (state 170)	[s_after_dec_1_ls = ack0]	<merge 208 now @208>
+
+ 23:	proc  0 (:init::1) rems3Bad.pml:267 (state 206)	[ol = 0]
+
+ 24:	proc  0 (:init::1) rems3Bad.pml:276 (state 215)	[(!(ol))]
+
+ 25:	proc  0 (:init::1) rems3Bad.pml:278 (state 216)	[dm = d1]	<merge 225 now @225>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:198 (state 140)	[((((!(ol)&&(dm==d1))&&(current[3]==evolved_0))&&1))]	<merge 0 now @141>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:200 (state 141)	[current[3] = evolved_0]	<merge 208 now @142>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:202 (state 142)	[current[4] = evolved]	<merge 208 now @143>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:203 (state 143)	[s_before_comm_0_targets[0] = after_enc_0]	<merge 208 now @144>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:204 (state 144)	[s_before_comm_0_targets[2] = receiving1_0]	<merge 208 now @145>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:205 (state 145)	[s_after_enc_0_targets[2] = receiving1_0]	<merge 208 now @146>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:206 (state 146)	[s_receiving0_0_1_targets = 0]	<merge 208 now @147>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:207 (state 147)	[s_receiving1_0_1_targets = after_dec_0]	<merge 208 now @148>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:208 (state 148)	[s_after_dec_0_1_targets = before_comm_0]	<merge 208 now @149>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:209 (state 149)	[s_before_comm_1_targets[0] = after_enc]	<merge 208 now @150>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:210 (state 150)	[s_before_comm_1_targets[1] = receiving1]	<merge 208 now @151>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:211 (state 151)	[s_after_enc_1_targets[0] = sending]	<merge 208 now @152>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:212 (state 152)	[s_after_enc_1_targets[1] = receiving1]	<merge 208 now @153>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:213 (state 153)	[s_sending_1_targets = before_comm]	<merge 208 now @154>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:214 (state 154)	[s_receiving0_1_targets = 0]	<merge 208 now @155>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:215 (state 155)	[s_receiving1_1_targets = after_dec]	<merge 208 now @156>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:216 (state 156)	[s_after_dec_1_targets = before_comm]	<merge 208 now @157>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:217 (state 157)	[s_before_comm_0_ls[0] = encrypt_0]	<merge 208 now @158>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:218 (state 158)	[s_before_comm_0_ls[2] = comm1]	<merge 208 now @159>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:219 (state 159)	[s_after_enc_0_ls[2] = comm1]	<merge 208 now @160>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:220 (state 160)	[s_receiving0_0_1_ls = 0]	<merge 208 now @161>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:221 (state 161)	[s_receiving1_0_1_ls = decrypt_0]	<merge 208 now @162>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:222 (state 162)	[s_after_dec_0_1_ls = ack1]	<merge 208 now @163>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:223 (state 163)	[s_before_comm_1_ls[0] = encrypt_1]	<merge 208 now @164>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:224 (state 164)	[s_before_comm_1_ls[1] = comm0]	<merge 208 now @165>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:225 (state 165)	[s_after_enc_1_ls[0] = comm1]	<merge 208 now @166>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:226 (state 166)	[s_after_enc_1_ls[1] = comm0]	<merge 208 now @167>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:227 (state 167)	[s_sending_1_ls = ack1]	<merge 208 now @168>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:228 (state 168)	[s_receiving0_1_ls = 0]	<merge 208 now @169>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:229 (state 169)	[s_receiving1_1_ls = decrypt_1]	<merge 208 now @170>
+
+ 26:	proc  0 (:init::1) rems3Bad.pml:230 (state 170)	[s_after_dec_1_ls = ack0]	<merge 208 now @208>
+
+ 27:	proc  0 (:init::1) rems3Bad.pml:267 (state 206)	[ol = 0]
+
+ 28:	proc  0 (:init::1) rems3Bad.pml:276 (state 215)	[(!(ol))]
+
+ 29:	proc  0 (:init::1) rems3Bad.pml:279 (state 217)	[dm = d2]	<merge 225 now @225>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:231 (state 171)	[((((!(ol)&&(dm==d2))&&(current[3]==evolved_0))&&(!(((!(ol)&&(dm==d2))&&(current[5]==before_evolution)))||(current[2]==before_comm))))]	<merge 0 now @172>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:233 (state 172)	[current[3] = evolved_0]	<merge 208 now @173>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:235 (state 173)	[current[5] = evolved]	<merge 208 now @174>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:236 (state 174)	[s_before_comm_0_targets[1] = after_enc_0]	<merge 208 now @175>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:237 (state 175)	[s_before_comm_0_targets[3] = receiving1_0]	<merge 208 now @176>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:238 (state 176)	[s_after_enc_0_targets[3] = receiving1_0]	<merge 208 now @177>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:239 (state 177)	[s_receiving0_0_2_targets = 0]	<merge 208 now @178>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:240 (state 178)	[s_receiving1_0_2_targets = after_dec_0]	<merge 208 now @179>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:241 (state 179)	[s_after_dec_0_2_targets = before_comm_0]	<merge 208 now @180>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:242 (state 180)	[s_before_comm_2_targets[0] = after_enc]	<merge 208 now @181>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:243 (state 181)	[s_before_comm_2_targets[1] = receiving1]	<merge 208 now @182>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:244 (state 182)	[s_after_enc_2_targets[0] = sending]	<merge 208 now @183>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:245 (state 183)	[s_after_enc_2_targets[1] = receiving1]	<merge 208 now @184>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:246 (state 184)	[s_sending_2_targets = before_comm]	<merge 208 now @185>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:247 (state 185)	[s_receiving0_2_targets = 0]	<merge 208 now @186>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:248 (state 186)	[s_receiving1_2_targets = after_dec]	<merge 208 now @187>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:249 (state 187)	[s_after_dec_2_targets = before_comm]	<merge 208 now @188>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:250 (state 188)	[s_before_comm_0_ls[1] = encrypt_0]	<merge 208 now @189>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:251 (state 189)	[s_before_comm_0_ls[3] = comm1]	<merge 208 now @190>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:252 (state 190)	[s_after_enc_0_ls[3] = comm1]	<merge 208 now @191>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:253 (state 191)	[s_receiving0_0_2_ls = 0]	<merge 208 now @192>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:254 (state 192)	[s_receiving1_0_2_ls = decrypt_0]	<merge 208 now @193>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:255 (state 193)	[s_after_dec_0_2_ls = ack1]	<merge 208 now @194>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:256 (state 194)	[s_before_comm_2_ls[0] = encrypt_2]	<merge 208 now @195>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:257 (state 195)	[s_before_comm_2_ls[1] = comm0]	<merge 208 now @196>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:258 (state 196)	[s_after_enc_2_ls[0] = comm1]	<merge 208 now @197>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:259 (state 197)	[s_after_enc_2_ls[1] = comm0]	<merge 208 now @198>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:260 (state 198)	[s_sending_2_ls = ack1]	<merge 208 now @199>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:261 (state 199)	[s_receiving0_2_ls = 0]	<merge 208 now @200>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:262 (state 200)	[s_receiving1_2_ls = decrypt_2]	<merge 208 now @201>
+
+ 30:	proc  0 (:init::1) rems3Bad.pml:263 (state 201)	[s_after_dec_2_ls = ack0]	<merge 208 now @208>
+
+ 31:	proc  0 (:init::1) rems3Bad.pml:268 (state 207)	[ol = 1]
+
+ 32:	proc  0 (:init::1) rems3Bad.pml:281 (state 220)	[else]
+
+ 33:	proc  0 (:init::1) rems3Bad.pml:281 (state 221)	[(1)]	<merge 0 now @225>
+
+ 34:	proc  0 (:init::1) rems3Bad.pml:77 (state 60)	[((ol&&(dob==d1)))]
+
+spin: trail ends after 34 steps
+#processes: 1
+		current[0] = sending_0
+		current[1] = receiving0
+		current[2] = before_comm
+		current[3] = evolved_0
+		current[4] = evolved
+		current[5] = evolved
+		encrypted[0] = 0
+		encrypted[1] = 0
+		ol = 1
+ 34:	proc  0 (:init::1) rems3Bad.pml:78 (state 97)
+1 processes created
+Exit-Status 0
