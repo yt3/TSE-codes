@@ -128,12 +128,12 @@ time 16.39	// The amount of consumed memory and time are measured
 
 To check if the failures can be detected,
 
-$ chmod 755 runBad.sh
+$ chmod 755 runBad.sh  
 $ ./runBad.sh
 
 To measure the scalability,
 
-$ chmod 755 run.sh
+$ chmod 755 run.sh  
 $ ./run.sh
 
 Then, the results are stored in the "results" file.
