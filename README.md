@@ -1,9 +1,9 @@
-Source codes for TSE submission
+Source codes for ICSE20 submission
 ====
 
 Overview
 
-Source codes for TSE submission:
+Source codes for ICSE20 submission:
 
 "Towards scalable model checking of reflective systems based on
 labeled transition systems"
@@ -59,9 +59,10 @@ You can reproduce the following two types of experimental results
 mentioned in the paper using these programs.
 
 First, using the files "rems/BL/rems3Bad.pml", "rems/BL/runBad.sh",
-"robot/modelBad.pml", and "robot/runBad.sh", you can check if the
-failures can be detected. After you execute "runBad.sh", you can
-obtain a file named "results".
+"rems/T3/rems3Bad.pml", "rems/T3/runBad.sh", "robot/modelBad.pml", and
+"robot/runBad.sh", you can check if the failures can be
+detected. After you execute "runBad.sh", you can obtain a file named
+"results".
 
 For example, the results of executing "rems/BL/runBad.sh" looks as
 follows, where "//" means that comments follow (see the
@@ -128,12 +129,12 @@ time 16.39	// The amount of consumed memory and time are measured
 
 To check if the failures can be detected,
 
-$ chmod 755 runBad.sh  
+$ chmod 755 runBad.sh
 $ ./runBad.sh
 
 To measure the scalability,
 
-$ chmod 755 run.sh  
+$ chmod 755 run.sh
 $ ./run.sh
 
 Then, the results are stored in the "results" file.
