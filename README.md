@@ -1,12 +1,12 @@
-Source codes for ICSE20 submission
+Source codes for the TSE paper
 ====
 
 Overview
 
-Source codes for ICSE20 submission:
+Source codes for the TSE paper:
 
-"Towards scalable model checking of reflective systems based on
-labeled transition systems"
+"Towards scalable model checking of reflective systems via labeled
+transition systems"
 
 including:
 
@@ -32,10 +32,7 @@ rems/T2T3 - for the specifications with T2 and T3.
 
 rems/T3 - for the specifications with T3.
 
-rems/results.sample - a sample of a part of created "results" file.
-
-robot - source codes that generate and verify specifications of the
-robot example using SPIN.
+robot - the specification of the robot example written in Promela.
 
 ## Requirement
 
@@ -55,18 +52,17 @@ GCC			https://gcc.gnu.org/
 
 ## Description
 
-You can reproduce the following two types of experimental results
-mentioned in the paper using these programs.
+By using the files in the "rems" directory, you can reproduce the
+following two types of experimental results mentioned in the paper
+using these programs.
 
-First, using the files "rems/BL/rems3Bad.pml", "rems/BL/runBad.sh",
-"rems/T3/rems3Bad.pml", "rems/T3/runBad.sh", "robot/modelBad.pml", and
-"robot/runBad.sh", you can check if the failures can be
-detected. After you execute "runBad.sh", you can obtain a file named
-"results".
+First, using the files "rems/BL/rems3Bad.pml" and "rems/BL/runBad.sh",
+you can check if the failures can be detected. After you execute
+"runBad.sh", you can obtain a file named "results".
 
-For example, the results of executing "rems/BL/runBad.sh" looks as
-follows, where "//" means that comments follow (see the
-"rems/BL/results.sample" file):
+The results of executing "rems/BL/runBad.sh" looks as follows, where
+"//" means that comments follow (see the "rems/BL/results.sample"
+file):
 
 ```
 pan:1: invalid end state (at depth 33)	// Deadlock detected.
@@ -100,8 +96,7 @@ spin: trail ends after 34 steps
 Second, using the other files, you can measure and compare the
 scalability of various settings. After you execute "run.sh" in each
 directory, you can obtain a file named "results". Its content is a
-repetition of the following descriptions (see the
-"rems/results.sample" file):
+repetition of the following descriptions:
 
 ```
 ...
@@ -127,7 +122,7 @@ time 16.39	// The amount of consumed memory and time are measured
 
 ## Usage
 
-To check if the failures can be detected,
+In the "rems" directory, to check if the failures can be detected,
 
 $ chmod 755 runBad.sh
 $ ./runBad.sh
