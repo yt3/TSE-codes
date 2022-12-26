@@ -137,3 +137,9 @@ Then, the results are stored in the "results" file.
 ## Install
 
 Just download the files.
+
+## history
+
+May 20, 2022: published
+
+Dec. 26, 2022: refreshed
